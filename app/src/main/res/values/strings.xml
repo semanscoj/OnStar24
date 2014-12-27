@@ -2,7 +2,12 @@
 <resources>
 
     <string name="app_name">OnStar 24</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="welcome">Welcome to OnStar 24!</string>
     <string name="action_settings">Settings</string>
+    <!--Text for Buttons in activity_main_in-->
+    <string name="top_left_button">New Button</string>
+    <string name="top_right_button">New Button</string>
+    <string name="bottom_left_button">New Button</string>
+    <string name="bottom_right_button">Concierge Service</string>
 
 </resources>
