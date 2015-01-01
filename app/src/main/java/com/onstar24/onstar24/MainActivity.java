@@ -7,14 +7,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+
 public class MainActivity extends ActionBarActivity {
+
+    Button loginButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_out);
 
-        Button loginButton = (Button) findViewById(R.id.login_button);
+        loginButton = (Button) findViewById(R.id.login_button);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,7 +26,6 @@ public class MainActivity extends ActionBarActivity {
                 setContentView(R.layout.activity_main_in);
             }
         });
-
 
     }
 
@@ -43,12 +46,32 @@ public class MainActivity extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }else if (id == R.id.view_cradle) {
+            setContentView(R.layout.cradle);
+        }else if (id == R.id.logout_item) {
+            setContentView(R.layout.activity_main_out);
         }
 
         return super.onOptionsItemSelected(item);
     }
 
+    public void button_goto_dash(View view) {
+        setContentView(R.layout.activity_main_in);
+    }
     //activity_main_in buttons
-    public void button_goto_concierge_service(View view) {
+    public void button_goto_personal(View view) {
+        setContentView(R.layout.personal);
+    }
+    public void button_goto_business(View view) {
+        setContentView(R.layout.business);
+    }
+    public void button_goto_health(View view) {
+        setContentView(R.layout.health);
+    }
+    public void button_goto_emergency(View view) {
+        setContentView(R.layout.emergency);
+    }
+    public void button_goto_adviser(View view) {
+        setContentView(R.layout.adviser);
     }
 }

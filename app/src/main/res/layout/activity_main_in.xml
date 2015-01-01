@@ -8,7 +8,7 @@
     android:textAlignment="center"
     android:orientation="vertical">
 
-        <LinearLayout
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -26,7 +26,8 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:textSize="26sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:onClick="button_goto_personal"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -36,9 +37,41 @@
                 android:layout_weight="1"
                 android:layout_gravity="center"
                 android:textSize="26sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:onClick="button_goto_health"/>
 
         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/middle_left_button"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            android:onClick="button_goto_business"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/middle_right_button"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            android:onClick="button_goto_business" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -56,7 +89,8 @@
             android:layout_weight="1"
             android:layout_gravity="center"
             android:textSize="26sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold|italic"
+            android:onClick="button_goto_emergency"/>
 
         <Button
             android:layout_width="match_parent"
@@ -67,7 +101,7 @@
             android:layout_gravity="center"
             android:textSize="26sp"
             android:textStyle="bold|italic"
-            android:onClick="button_goto_concierge_service"/>
+            android:onClick="button_goto_adviser"/>
     </LinearLayout>
 
 </LinearLayout>
